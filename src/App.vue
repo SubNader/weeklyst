@@ -121,8 +121,9 @@
       <reorder-custom-lists-modal @reset-custom-list="resetCustomList"></reorder-custom-lists-modal>
     </div>
     <div class="mobile d-flex flex-column justify-content-center align-items-center">
-      <i class="bi-exclamation-diamond mb-4" style="font-size: 100px"></i>
-      <h3 style="text-align: center">{{ $t("ui.mobileWarning") }}</h3>
+        <img v-if="darkTheme" src="img/isologo-white.svg" />
+        <img v-else src="img/isologo-color.svg" />
+        <p style="text-align: center;margin-top:20px;">{{ $t("ui.mobileWarning") }}</p>
     </div>
 
     <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1056">
@@ -143,7 +144,8 @@
     </div>
   </div>
   <div v-if="!compatible" class="compatible d-flex flex-column justify-content-center align-items-center p-5">
-    <i class="bi-exclamation-diamond mb-4" style="font-size: 100px"></i>
+    <img v-if="darkTheme" src="img/isologo-white.svg" />
+    <img v-else src="img/isologo-color.svg" />
     <h3 style="text-align: center">{{ $t("ui.compatible") }}</h3>
   </div>
 </template>
