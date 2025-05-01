@@ -23,18 +23,6 @@
             style="display: inline"
           />
         </div>
-        <div v-show="sponsor" class="d-flex justify-content-center" style="height: 50px">
-          <a v-if="sponsor" :href="sponsor.url" class="d-flex sponsor-container align-items-center" target="_blank">
-            <img :src="sponsor.img" class="sponsor-img" alt="WeekToDo Sponsor" />
-            <div class="my-2 mx-2">
-              <div class="fw-bolder d-inline" style="text-decoration: unset !important">{{ sponsor.name }}</div>
-              <div class="opacity-50 mx-2 d-inline">{{ sponsor.message }}</div>
-            </div>
-          </a>
-        </div>
-        <div style="height: 25px; width: 200px" class="d-flex justify-content-center">
-          <div v-show="sponsor" class="opacity-25" style="font-size: 0.7rem">{{ $t("ui.sponsoredBy") }}</div>
-        </div>
       </div>
     </div>
   </transition>
