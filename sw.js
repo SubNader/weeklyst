@@ -8,7 +8,6 @@ var contentToCache = [
   "/fonts/bootstrap-icons.1ed478a6.woff2",
   "/img/logo-color.svg",
   "/manifest.json",
-  "/fav_icons/android-chrome-192x192.png"
 ];
 
 self.addEventListener("install", (e) => {
