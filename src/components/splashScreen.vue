@@ -11,14 +11,14 @@
           <img
             v-if="darkTheme"
             class="logo"
-            src="../../public/img/Weeklyst-isologo-white.svg"
+            src="../../public/img/isologo-white.svg"
             alt="Weeklyst"
             style="display: inline"
           />
           <img
             v-else
             class="logo"
-            src="../../public/img/Weeklyst-isologo-color.svg"
+            src="../../public/img/isologo-color.svg"
             alt="Weeklyst"
             style="display: inline"
           />
