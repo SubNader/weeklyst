@@ -50,13 +50,6 @@ export default {
       darkTheme: this.$store.getters.config.darkTheme,
     };
   },
-  mounted() {
-    const axios = require("axios").default;
-    axios
-      .get("https://weeklyst.com/api/sponsors")
-      .then((response) => this.renderSponsor(response))
-      .catch((error) => console.log(error.message));
-  },
   methods: {
     hideSplash: function () {
       this.show = false;
