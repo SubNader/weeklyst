@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="41.0993 180.415 167.1429 90" width="167.143px" height="90px">
-	<g data-v-423bf9ae="" id="c910cbff-caae-4af9-935f-bdc87ec0489d" transform="matrix(6.4285712242126465, 0, 0, 6.4285712242126465, 28.24214363098145, 122.55789184570314)" stroke="none" fill="#E8E8EE">
-		<path d="M3 13.5a1 1 0 00-1 1v3a1 1 0 002 0v-3a1 1 0 00-1-1zM6 12.5a1 1 0 00-1 1v5a1 1 0 002 0v-5a1 1 0 00-1-1zM9 11.5a1 1 0 00-1 1v7a1 1 0 002 0v-7a1 1 0 00-1-1zM12 12.5a1 1 0 00-1 1v5a1 1 0 002 0v-5a1 1 0 00-1-1zM15 13.5a1 1 0 00-1 1v3a1 1 0 002 0v-3a1 1 0 00-1-1zM18 12a1 1 0 00-1 1v6a1 1 0 002 0v-6a1 1 0 00-1-1zM27 12a1 1 0 00-1 1v6a1 1 0 002 0v-6a1 1 0 00-1-1zM21 10.5a1 1 0 00-1 1v9a1 1 0 002 0v-9a1 1 0 00-1-1zM24 9a1 1 0 00-1 1v12a1 1 0 002 0V10a1 1 0 00-1-1z"/>
-	</g>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="25.9218 58.1156 167.1429 90" width="167.143px" height="90px">
+	<defs>
+		<linearGradient gradientUnits="userSpaceOnUse" x1="15" y1="9" x2="15" y2="23" id="gradient-0">
+			<stop offset="0" style="stop-color: rgb(7.0588% 69.02% 91.765%)"/>
+			<stop offset="1" style="stop-color: rgb(0% 41.132% 56.76%)"/>
+		</linearGradient>
+	</defs>
+	<path d="M3 13.5a1 1 0 00-1 1v3a1 1 0 002 0v-3a1 1 0 00-1-1zM6 12.5a1 1 0 00-1 1v5a1 1 0 002 0v-5a1 1 0 00-1-1zM9 11.5a1 1 0 00-1 1v7a1 1 0 002 0v-7a1 1 0 00-1-1zM12 12.5a1 1 0 00-1 1v5a1 1 0 002 0v-5a1 1 0 00-1-1zM15 13.5a1 1 0 00-1 1v3a1 1 0 002 0v-3a1 1 0 00-1-1zM18 12a1 1 0 00-1 1v6a1 1 0 002 0v-6a1 1 0 00-1-1zM27 12a1 1 0 00-1 1v6a1 1 0 002 0v-6a1 1 0 00-1-1zM21 10.5a1 1 0 00-1 1v9a1 1 0 002 0v-9a1 1 0 00-1-1zM24 9a1 1 0 00-1 1v12a1 1 0 002 0V10a1 1 0 00-1-1z" style="fill: url(&quot;#gradient-0&quot;);" transform="matrix(6.4285712242126465, 0, 0, 6.4285712242126465, 13.06466797859758, 0.2584979886955239)"/>
 </svg>
