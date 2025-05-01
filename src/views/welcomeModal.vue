@@ -61,7 +61,7 @@
     import appView from "./welcome/appView";
 
     export default {
-        name: "aboutModal",
+        name: "welcomeModal",
         components: {
             LanguageView,
             ThemeView,

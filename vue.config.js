@@ -4,8 +4,8 @@ module.exports = {
       nodeIntegration: true,
       customFileProtocol: './',
       builderOptions: {
-        appId: "weektodo-app.netlify.app",
-        productName: "WeekToDo",
+        appId: "Weeklyst-app.netlify.app",
+        productName: "Weeklyst",
         publish: ["github"],
         linux: {
           category: "Utility",

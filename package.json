@@ -1,10 +1,10 @@
 {
-  "name": "WeekToDo",
+  "name": "Weeklyst",
   "version": "2.2.0",
   "private": true,
   "description": "Free and Open Source Minimalist Weekly Planner focused on privacy.",
-  "author": "Manuel Ernesto Garcia <contact@weektodo.me> (https://weektodo.me/)",
-  "homepage": "https://weektodo.me",
+  "author": "Manuel Ernesto Garcia <contact@Weeklyst.me> (https://Weeklyst.me/)",
+  "homepage": "https://Weeklyst.me",
   "keywords": [
     "ToDo",
     "Weekly Planner",
@@ -24,7 +24,7 @@
     "test": "echo success"
   },
   "main": "background.js",
-  "repository": "https://github.com/manuelernestog/weektodo",
+  "repository": "https://github.com/manuelernestog/Weeklyst",
   "dependencies": {
     "@achrinza/node-ipc": "^10.1.10",
     "@manuelernestog/click-handler": "^1.4.0",
@@ -66,5 +66,6 @@
   },
   "resolutions": {
     "vue-cli-plugin-electron-builder/electron-builder": "^23.0.3"
-  }
+  },
+  "packageManager": "yarn@1.22.22+sha512.a6b2f7906b721bba3d67d4aff083df04dad64c399707841b7acf00f6b133b7ac24255f2652fa22ae3534329dc6180534e98d17432037ff6fd140556e2bb3137e"
 }

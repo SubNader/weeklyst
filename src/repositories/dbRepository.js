@@ -1,6 +1,6 @@
 export default {
     open() {
-        var req = indexedDB.open('weekToDo', 4);
+        var req = indexedDB.open('Weeklyst', 4);
         req.onupgradeneeded = function (event) {
             var db = event.target.result;
             if (!db.objectStoreNames.contains("todo_lists")) {

@@ -101,8 +101,8 @@
         </div>
 
         <div v-show="!showCustomList && !showCalendar" style="margin: auto">
-          <img v-if="darkTheme" src="img/WeekToDoDarkLogo.webp" />
-          <img v-else src="img/WeekToDoLightLogo.webp" />
+          <img v-if="darkTheme" src="img/WeeklystDarkLogo.webp" />
+          <img v-else src="img/WeeklystLightLogo.webp" />
         </div>
       </div>
 
@@ -110,8 +110,6 @@
       <config-modal @change-columns="weekResetScroll" :configProp="$store.getters.config"></config-modal>
       <clear-data-modal></clear-data-modal>
       <clear-list-modal></clear-list-modal>
-      <about-modal></about-modal>
-      <donate-modal></donate-modal>
       <welcome-modal></welcome-modal>
       <tips-modal></tips-modal>
       <to-do-modal :selectedTodo="selectedTodo"></to-do-modal>
@@ -142,7 +140,6 @@
         @subTextClick="downloadNewVersion"
       ></toast-message>
 
-      <toast-message id="copiedAddress" :text="$t('donate.copiedAddres')"></toast-message>
     </div>
   </div>
   <div v-if="!compatible" class="compatible d-flex flex-column justify-content-center align-items-center p-5">
@@ -160,8 +157,6 @@ import removeCustomList from "./components/comfirmModals/removeCustomList";
 import configModal from "./views/configModal";
 import splashScreen from "./components/splashScreen";
 import configRepository from "./repositories/configRepository";
-import aboutModal from "./views/aboutModal";
-import donateModal from "./views/donateModal";
 import welcomeModal from "./views/welcomeModal";
 import toDoModal from "./views/toDoModal/toDoModal";
 import tipsModal from "./views/tipsModal";
@@ -185,13 +180,11 @@ import tasksHelper from "./helpers/tasksHelper";
 export default {
   name: "App",
   components: {
-    donateModal,
     configModal,
     toDoList,
     sideBar,
     removeCustomList,
     splashScreen,
-    aboutModal,
     welcomeModal,
     tipsModal,
     toDoModal,
@@ -413,7 +406,7 @@ export default {
       if (!(this.$store.getters.config.notificationOnStartup && !this.$store.getters.config.firstTimeOpen)) return;
       setTimeout(
         function () {
-          new Notification("WeekToDo", {
+          new Notification("Weeklyst", {
             body: this.initialNotificationText(),
             icon: "/favicon.ico",
             silent: true,
@@ -511,7 +504,7 @@ export default {
       if (this.isElectron() && this.$store.getters.config.checkUpdates) {
         const axios = require("axios").default;
         axios
-          .get("https://app.weektodo.me/version.json")
+          .get("https://weeklyst.com/version.json")
           .then((response) => this.showNewVersionToast(response))
           .catch((error) => console.log(error.message));
       }
@@ -535,13 +528,13 @@ export default {
     downloadNewVersion: function () {
       let isElectron = require("is-electron");
       if (isElectron()) {
-        require("electron").shell.openExternal("https://weektodo.me", "_blank");
+        require("electron").shell.openExternal("https://weeklyst.com", "_blank");
       } else {
-        window.open("https://weektodo.me", "_blank");
+        window.open("https://weeklyst.com", "_blank");
       }
     },
     seeChangeLog: function () {
-      window.open("https://weektodo.me/changelog", "_blank");
+      window.open("https://weeklyst.com/changelog", "_blank");
     },
     syncElectronConfig: function () {
       const { ipcRenderer } = require("electron");

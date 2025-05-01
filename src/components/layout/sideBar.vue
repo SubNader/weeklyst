@@ -5,7 +5,7 @@
       src="/img/logo-color.svg"
       width="42"
       height="42"
-      alt="WeekTodo Logo"
+      alt="Weeklyst Logo"
       data-bs-toggle="modal"
       data-bs-target="#aboutModal"
       :title="$t('about.about')"
@@ -15,7 +15,7 @@
       src="/img/logo-white.svg"
       width="42"
       height="42"
-      alt="WeekTodo Logo"
+      alt="Weeklyst Logo"
       data-bs-toggle="modal"
       data-bs-target="#aboutModal"
       :title="$t('about.about')"
@@ -60,14 +60,9 @@
           <hr class="dropdown-divider" />
         </li>
         <li>
-          <a href="https://weektodo.me/support-us" target="_blank" class="dropdown-item" type="button">
+          <a href="https://weeklyst.com/support-us" target="_blank" class="dropdown-item" type="button">
             <i class="bi-gift"></i> <span>{{ $t("donate.supportUs") }}</span>
           </a>
-        </li>
-        <li>
-          <button class="dropdown-item" type="button" data-bs-toggle="modal" data-bs-target="#aboutModal">
-            <i class="bi-info-circle"></i> <span>{{ $t("about.about") }}</span>
-          </button>
         </li>
       </ul>
     </div>
@@ -146,7 +141,7 @@ export default {
       document.getElementById("config-general-tab").click();
     },
     openDonateModal: function () {
-      window.open("https://weektodo.me/support-us", "_blank");
+      window.open("https://weeklyst.com/support-us", "_blank");
     },
     print: function () {
       window.print();
