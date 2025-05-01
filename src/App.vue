@@ -121,8 +121,8 @@
       <reorder-custom-lists-modal @reset-custom-list="resetCustomList"></reorder-custom-lists-modal>
     </div>
     <div class="mobile d-flex flex-column justify-content-center align-items-center">
-        <img v-if="darkTheme" src="img/isologo-white.svg" />
-        <img v-else src="img/isologo-color.svg" />
+        <img v-if="darkTheme" style="max-width:100%" src="img/isologo-white.svg" />
+        <img v-else style="max-width:100%" src="img/isologo-color.svg" />
         <p style="text-align: center;margin-top:20px;">{{ $t("ui.mobileWarning") }}</p>
     </div>
 
