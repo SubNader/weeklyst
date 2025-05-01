@@ -158,7 +158,6 @@ import RecurrentEventsModal from "./views/RecurrentEventsModal.vue";
 import repeatingEventRepository from "./repositories/repeatingEventRepository";
 import toDoListRepository from "./repositories/toDoListRepository";
 import ReorderCustomListsModal from "./views/ReorderCustomListsModal.vue";
-import toastMessage from "./components/toastMessage";
 import activeToDo from "./components/activeToDo.vue";
 import tasksHelper from "./helpers/tasksHelper";
 
@@ -178,7 +177,6 @@ export default {
     importingModal,
     ReorderCustomListsModal,
     clearListModal,
-    toastMessage,
     activeToDo,
   },
   data() {
