@@ -406,7 +406,7 @@ export default {
       if (!(this.$store.getters.config.notificationOnStartup && !this.$store.getters.config.firstTimeOpen)) return;
       setTimeout(
         function () {
-          new Notification("Weeklyst", {
+          new Notification("weeklyst", {
             body: this.initialNotificationText(),
             icon: "/favicon.ico",
             silent: true,
