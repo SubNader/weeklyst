@@ -2,9 +2,8 @@
   "name": "Weeklyst",
   "version": "2.2.0",
   "private": true,
-  "description": "Free and Open Source Minimalist Weekly Planner focused on privacy.",
-  "author": "Manuel Ernesto Garcia <contact@Weeklyst.me> (https://Weeklyst.me/)",
-  "homepage": "https://Weeklyst.me",
+  "description": "The weekly planner for incremental improvements.",
+  "homepage": "https://weeklyst.com",
   "keywords": [
     "ToDo",
     "Weekly Planner",
@@ -24,7 +23,7 @@
     "test": "echo success"
   },
   "main": "background.js",
-  "repository": "https://github.com/manuelernestog/Weeklyst",
+  "repository": "https://github.com/subnader/weeklyst",
   "dependencies": {
     "@achrinza/node-ipc": "^10.1.10",
     "@manuelernestog/click-handler": "^1.4.0",
