@@ -1,7 +1,7 @@
 <template>
   <div class="row">
     <div class="col-md-4">
-      <img class="logo info-image" src="Weeklyst-Logo-Color.svg" alt="Weeklyst" title="Weeklyst Logo" width="110" />
+      <img class="logo info-image" src="img/logo-color.svg" alt="Weeklyst" title="Weeklyst Logo" width="110" />
     </div>
     <div class="col-md-8">
       <div>
