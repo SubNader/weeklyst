@@ -12,28 +12,16 @@
             v-if="darkTheme"
             class="logo"
             src="../../public/img/Weeklyst-isologo-white.svg"
-            alt="Weeklyst Logo"
+            alt="Weeklyst"
             style="display: inline"
           />
           <img
             v-else
             class="logo"
             src="../../public/img/Weeklyst-isologo-color.svg"
-            alt="Weeklyst Logo"
+            alt="Weeklyst"
             style="display: inline"
           />
-        </div>
-        <div v-show="sponsor" class="d-flex justify-content-center" style="height: 50px">
-          <a v-if="sponsor" :href="sponsor.url" class="d-flex sponsor-container align-items-center" target="_blank">
-            <img :src="sponsor.img" class="sponsor-img" alt="Weeklyst Sponsor" />
-            <div class="my-2 mx-2">
-              <div class="fw-bolder d-inline" style="text-decoration: unset !important">{{ sponsor.name }}</div>
-              <div class="opacity-50 mx-2 d-inline">{{ sponsor.message }}</div>
-            </div>
-          </a>
-        </div>
-        <div style="height: 25px; width: 200px" class="d-flex justify-content-center">
-          <div v-show="sponsor" class="opacity-25" style="font-size: 0.7rem">{{ $t("ui.sponsoredBy") }}</div>
         </div>
       </div>
     </div>
@@ -46,7 +34,6 @@ export default {
   data() {
     return {
       show: true,
-      sponsor: null,
       darkTheme: this.$store.getters.config.darkTheme,
     };
   },
@@ -54,82 +41,11 @@ export default {
     hideSplash: function () {
       this.show = false;
     },
-    renderSponsor: function (response) {
-      var sponsors = [];
-
-      sponsors.push({
-        name: "Weeklyst",
-        message: this.$t("donate.splashMessage"),
-        url: "https://weeklyst.com/support-us",
-        img: "/icons/ko-fi.png",
-      });
-
-      response.data.bronze.forEach(function (obj) {
-        sponsors.push(obj);
-      });
-
-      response.data.silver.forEach(function (obj) {
-        for (let i = 0; i < 3; i++) {
-          sponsors.push(obj);
-        }
-      });
-
-      response.data.golden.forEach(function (obj) {
-        for (let i = 0; i < 7; i++) {
-          sponsors.push(obj);
-        }
-      });
-
-      response.data.diamond.forEach(function (obj) {
-        for (let i = 0; i < 15; i++) {
-          sponsors.push(obj);
-        }
-      });
-
-      this.sponsor = sponsors[Math.floor(Math.random() * sponsors.length)];
-    },
   },
 };
 </script>
 
 <style scoped>
-.sponsor-container {
-  height: fit-content;
-  width: fit-content;
-  padding: 4px 10px 4px 10px;
-  font-size: 0.85rem;
-  box-sizing: border-box;
-  border-radius: 25px;
-  -webkit-box-align: start;
-  -ms-flex-align: start;
-  -webkit-align-items: flex-start;
-  -moz-align-items: flex-start;
-  align-items: flex-start;
-  position: relative;
-  background-color: #fefefe;
-  box-shadow: 0 2px 20px 0 rgb(0 0 0 / 7%);
-  /*border: 1px solid #dbdbdb;*/
-  text-decoration: unset;
-  color: unset;
-  transition: transform 0.4s;
-}
-
-.dark-theme .sponsor-container {
-  background-color: #102430;
-}
-
-.sponsor-container:hover {
-  transform: scale(1.04);
-}
-
-.sponsor-img {
-  width: 32px;
-  border-radius: 25px;
-}
-
-/*.sponsor-text{*/
-/*  text-decoration: unset;*/
-/*}*/
 
 .splash-screen {
   width: 100%;
@@ -168,12 +84,6 @@ export default {
   letter-spacing: 0.4rem;
   color: #79606b;
   margin-bottom: 20px;
-}
-
-.sponsor {
-  margin-top: 10px;
-  font-size: 0.8rem;
-  color: #bababa;
 }
 
 .dark-theme .splash-screen span {
