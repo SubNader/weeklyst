@@ -125,23 +125,6 @@
         <img v-else style="max-width:100%" src="img/isologo-color.svg" />
         <p style="text-align: center;margin-top:20px;">{{ $t("ui.mobileWarning") }}</p>
     </div>
-
-    <div class="position-fixed bottom-0 end-0 p-3" style="z-index: 1056">
-      <toast-message
-        id="versionChanges"
-        :text="$t('ui.softwareUpdated')"
-        :sub-text="$t('ui.seeChanges')"
-        @subTextClick="seeChangeLog"
-      ></toast-message>
-
-      <toast-message
-        id="newVersionAvailable"
-        :text="$t('ui.newVersionAvailable')"
-        :sub-text="$t('ui.download')"
-        @subTextClick="downloadNewVersion"
-      ></toast-message>
-
-    </div>
   </div>
   <div v-if="!compatible" class="compatible d-flex flex-column justify-content-center align-items-center p-5">
     <img v-if="darkTheme" src="img/isologo-white.svg" />
